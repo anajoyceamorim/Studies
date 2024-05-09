@@ -13,15 +13,16 @@ int desenfileira (celula *f, int *y);
 
 int main() {
     celula *head = malloc(sizeof(celula));
+    head->prox = NULL;
+    head->dado = 0;
+
     celula *fn = enfileira(head, 1);
-
     fn = enfileira(fn, 2);
-
     imprime(head);
 
-    int* y;
-    desenfileira(fn, *y);
-    printf("%d \n", *y);
+    int y;
+    desenfileira(head, &y);
+    printf("%d \n", y);
     imprime(head);
 
     return 0;
