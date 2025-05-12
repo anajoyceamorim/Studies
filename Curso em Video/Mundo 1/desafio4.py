@@ -1,1 +1,9 @@
-
+entrada = input()
+print('O tipo primitivo deste valor é : ', type(entrada))
+print('Só tem espaços: ', entrada.isspace())
+print('Só tem números?', entrada.isnumeric())
+print('É alfabético?', entrada.isalpha())
+print('É alphanumérico?', entrada.isalnum())
+print('Está em maiúsculas?', entrada.isupper())
+print('Está em minúsculas?', entrada.islower())
+print('Está captalizada?', entrada.istitle())
